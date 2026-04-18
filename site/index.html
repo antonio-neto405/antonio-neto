@@ -6,86 +6,104 @@
 content="Width=device-width,
 inicial-scale=1,O">
   <title>Netto Lojas</title>
+
   <style>
    body {
-  font-family: Arial, sans-serif;
-  margin: O;
+  margin: O
+  font-family: Ariel,sans-serif;
+  background: #f8f8f8;
    }
+
    header {
-    background: #333;
-    color: White;
-    padding: 15px;
-    text-align: center;
+    background: #OOO;
+    color: #fff;
+    padding:15px;
+    text-align:center;
    }
-   nav a{
-    background: #555;
+
+   .container {
+      display: grid;
+      grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
+      gap:20px;
+      padding:20px;
+   }
+
+   .produto {
+     background: #fff;
+     border-radius:10px;
+     padding: center;
+     transition:0.3s;
+   }
+
+   .produto:hover {
+     transform: scale(1.05);
+   }
+   .produto img {
+    width:100%;
+    border-radius:10px;
+   }
+   .preço {
+    color:green;
+    font-weight:bold;
+    margin:10px 0;
+   }
+   button {
+    background: #25D366;
+    color: white;
+    border: none;
     padding: 10px;
-    text-align:center;
-   }
-   nav a {
-     color: white;
-     margin: O 10px;
-     text-decoration:none;
-   }
-   nav a:hover {
-     text-decoration:underline;
-   }
-   main {
-    padding: 20px;
-   }
-   footer{
-    background: #333;
-    color:White;
-    text-align:center;
-    padding:10px;
-    position: fixed;
-    bottom: O;
-    width: 100%;
-   }
-  </style>
-</head>
-<body>
+    border-radius: 5px;
+    cursor:pointer;
+    }
 
-<header>
-  <h1>Netto Lojas</h1>
-  <p>Bem-Vindo a Netto Lojas!</p>
-</header>
+    button:hover {
+      background: #1ebe5d;
+    }
+    </style>
+    </head>
 
-</nav>
- <a href="#">Loja de roupas é acessórios masculinos!</a>
- <a href="#">Local, onde o estilo masculino é valorizado.</a>
- <a href="#">(84)94322-4356</a>
-</nav>
+    <body>
 
-</main>
-  <h2>Nossas Coleções de Roupas Masculinas.</h2>
-  <div class="produtos">
-    <article>
-      <h3>Camiseta casual</h3>
-      <p>Preço: R$ 59,90</p>
-      <button>Comprar</button>
-    </article>
-    <article>
-      <h3>Calça Jeans Slim</h3>
-      <p>Preço: R$ 120,00</p>
-      <button>Comprar</button>
-    <article>
-    </article>
-      <h3>Short Slim</h3>
-      <p>Preço: R$45,50</p>
-      <button>Comprar</button>
-    <article>
-    </article>
-      <h3>Chinelo Casual</h3>
-      <p>Preço: R$30,50</p>
-      <button>Comprar</button>
-    <article>
-    </div>
-  </main>
+    <header>
+    <h1>Netto Lojas</h1>
+    </header>
 
-<footer>
-  <p>2026 Netto Lojas</p>
-</footer>
-    
+   <div class="container">
+   <div class="produtos">
+  <img>
+src="https://via.placeholder.com/300x350">
+    <h3>Camiseta Premium</h3>
+    <p class="preço">R$ 79,90</p>
+    <button
+onclick="comprar('Camiseta Premium')"></button></div>
+
+  <div class="produto"><img
+src="https://via.placeholder.com/300x350">
+  <h3>Calça Jeans Slim</h3>
+  <p class="preço">R$ 149,90</p>
+  <button
+onclick="comprar('Calça Jeans Slim')">Comprar</button></div>
+  
+  <div class="produto">
+    <img
+src="https://via.placeholder.com/300x350">
+  <h3>Jaqueta Estilosa</h3>
+  <p class="preço">R$ 219,90</p>
+  <button 
+onclick="comprar('Jaqueta Estilosa')">comprar</button></div>
+
+ </div>
+
+<script>
+function comprar(produto) {
+  let numero = "5511999999999";//
+84934569505
+  let mensagem = "olá quero comprar:" + produto;
+  let url = "https://wa.me/" + numero + "?text="+ encodeURIComponent(mensagem); window.open(url, "_blank");
+}
+ 
+ </script>
+      
 </body>
 </html>
