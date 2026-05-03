@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 40px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #2196f3, #00bcd4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #2196f3;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* PORTFÓLIO */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #ddd;
+  padding: 40px;
+  width: 200px;
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+}
